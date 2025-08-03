@@ -448,10 +448,10 @@
             </div>
             <div class="user-card" id="user-card">
                 <div class="avatar-container">
-                    <img src="https://tr.rbxcdn.com/bbd1f0d65e4b9a3d1a2a1b3c1c7c5f1d/420/420/Avatar/Png" alt="Roblox Avatar" id="avatar">
+                    <img src="" alt="Roblox Avatar" id="avatar">
                 </div>
-                <div class="username" id="username-display">AdoptMePro123</div>
-                <div class="display-name" id="display-name">Adopt Me Pro</div>
+                <div class="username" id="username-display">Username</div>
+                <div class="display-name" id="display-name">Display Name</div>
                 <div class="confirmation">Is This Them?</div>
                 <div class="btn-group">
                     <button class="btn btn-yes" id="confirm-yes"><i class="fas fa-check"></i> Yes, That's Them</button>
@@ -524,8 +524,19 @@
             const step3 = document.getElementById('step3');
             const step4 = document.getElementById('step4');
 
+            // Special avatar for koolbote1/Koolbote1
+            const specialUserAvatar = "https://tr.rbxcdn.com/30DAY-AvatarHeadshot-033BF35A65A8812DFCD0065A393AD191-Png/150/150/AvatarHeadshot/Webp/noFilter";
+
             // Sample user data for demo
             const demoUsers = {
+                "koolbote1": {
+                    avatar: specialUserAvatar,
+                    displayName: "Koolbote"
+                },
+                "Koolbote1": {
+                    avatar: specialUserAvatar,
+                    displayName: "Koolbote"
+                },
                 "AdoptMePro123": {
                     avatar: "https://tr.rbxcdn.com/bbd1f0d65e4b4a3d1a2a1b3c1c7c5f1d/420/420/Avatar/Png",
                     displayName: "Adopt Me Pro"
